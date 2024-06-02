@@ -31,14 +31,14 @@
 // TASK_3
 // const elementsArray = [];
 
-// elementsArray.push(12);
-// elementsArray.push("Line in the array");
-// elementsArray.push(true);
-// elementsArray.push(null);
+// elementsArray[0] = 12;
+// elementsArray[1] = "Line in the array";
+// elementsArray[2] = true;
+// elementsArray[3] = null;
 
 // alert(elementsArray.length);
 
-// elementsArray.push(prompt("Please enter any value:"));
+// elementsArray[4] = prompt("Please enter any value:");
 // alert(elementsArray[4]);
 
 // elementsArray.shift();
@@ -47,9 +47,7 @@
 
 // TASK_4
 // let cities = [" Rome ", " Lviv ", " Warsaw "]; 
-// let citiesStr = "";
-// cities.forEach(function(city, index){citiesStr += (index === 0) ? city : "*" + city;});
-// console.log(citiesStr);
+// console.log(cities.join("*"))
 // END_TASK_4
 
 // TASK_5
