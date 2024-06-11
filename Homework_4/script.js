@@ -1,18 +1,18 @@
 // TASK_1
-// function calcRectangleArea(width, height){
-//     if(typeof height === "number" || typeof width === "number"){
-//         throw new Error("Incorrect function parameter(s).");    
-//     }
+function calcRectangleArea(width, height){
+    if(typeof height !== "number" || typeof width !== "number"){
+        throw new Error("Incorrect function parameter(s).");    
+    }
 
-//     return height * width;
-// }
+    return height * width;
+}
 
-// try{
-//     let area = calcRectangleArea(3, 6);
-//     console.log(area);
-// } catch(error){
-//     console.log(error.message);
-// }
+try{
+    let area = calcRectangleArea(7, 6);
+    console.log(area);
+} catch(error){
+    console.log(error.message);
+}
 // END_TASK_1
 
 // TASK_2
