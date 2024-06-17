@@ -64,15 +64,15 @@
 // END_TASK_6
 
 // TASK_7
-let main = document.createElement("main")
-main.className = " mainClass check item ";
-document.body.prepend(main);
+// let main = document.createElement("main")
+// main.className = " mainClass check item ";
+// document.body.prepend(main);
 
-let myDiv = document.createElement("div")
-myDiv.id = "myDiv";
-main.prepend(myDiv);
+// let myDiv = document.createElement("div")
+// myDiv.id = "myDiv";
+// main.prepend(myDiv);
 
-let paragraph = document.createElement("p");
-paragraph.innerHTML = "First paragraph"
-myDiv.prepend(paragraph);
+// let paragraph = document.createElement("p");
+// paragraph.innerHTML = "First paragraph"
+// myDiv.prepend(paragraph);
 // END_TASK_7
