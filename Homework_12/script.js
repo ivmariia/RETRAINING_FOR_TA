@@ -27,16 +27,23 @@
 // Sample input text
 // Sample input text
 // Sample input text
-let text = "cdbBdbsbz";
+// function findMatches(text) {
+//     const regex = /([dD][bB]+[dD]?)/g;
+//     let matches = [];
+//     let match;
 
-// Regular expression to match the pattern
-let regex = /d[bB]+(?:d)?/gi;
+//     while ((match = regex.exec(text)) !== null) {
+//         matches.push(match[0]);
+//         regex.lastIndex = match.index + 1;
+//     }
 
-// Array to store matched results
-let matches = text.match(regex);
+//     return matches;
+// }
 
-// Output the result
-console.log(matches); // ["dbBd", "bB", "d"]
+// const text = "cdbBdbsbz";
+// const result = findMatches(text);
+
+// console.log(result);
 // END_TASK_3
 
 // TASK_4
@@ -84,36 +91,26 @@ console.log(matches); // ["dbBd", "bB", "d"]
 // checkEmail('my_ma--il@gmail.com');
 // END_TASK_6
 
-// function checkLogin(input) {
-//     // Regular expression to find numbers (including floating-point numbers)
-//     const numberRegex = /\b\d+(\.\d+)?\b/g;
-
-//     // Regular expression to validate login format (starts with a letter, contains only letters and digits)
-//     const loginRegex = /[a-zA-Z][a-zA-Z0-9]{1,9}/g;
-
-//     // Find all occurrences of valid logins in the input
-//     const validLogins = input.match(loginRegex);
-
-//     if (!validLogins) {
-//         return false; // No valid logins found
-//     }
-
-//     // Array to store all numbers found
-//     let numbers = [];
-
-//     // Iterate through each valid login and find numbers in it
-//     validLogins.forEach(login => {
-//         const foundNumbers = login.match(numberRegex);
-//         if (foundNumbers) {
-//             numbers = [...numbers, ...foundNumbers];
-//         }
-//     });
-
-//     // Return true (valid) and the found numbers, or just true if no numbers found
-//     return { isValid: true, numbers: numbers.length > 0 ? numbers : [] };
+// TASK_7
+// function checkLogin(s) {
+//     let trimmedString = s.replace(/\s/g, '');
+//     const pattern = /^(?=.{2,10}$)[a-zA-Z][a-zA-Z0-9.]*$/
+//     return pattern.test(trimmedString);
 // }
 
-// // Example usage:
-// console.log(checkLogin(' ee 1.1 ret 3')); // { isValid: true, numbers: ['1.1', '3'] }
-// console.log(checkLogin(' ee 1*1 ret 3')); // false
+// function findNumbers(s) {
+//     return s.match(/\d+\.*\d*/g);
+// }
 
+// function processLogin(s) {
+//     console.log(checkLogin(s));
+
+//     let numbers = findNumbers(s);
+//     if (numbers.length > 0) {
+//         console.log(numbers.join(', '));
+//     }
+// }
+
+// processLogin(' ee 1.1 ret 3');
+// processLogin(' ee 1*1 ret 3');
+// END_TASK_7
