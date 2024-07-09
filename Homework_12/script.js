@@ -24,23 +24,9 @@
 // END_TASK_2
 
 // TASK_3
-// function findMatches(text) {
-//     const regex = /([dD][bB]+[dD]?)/g;
-//     let matches = [];
-//     let match;
-
-//     while ((match = regex.exec(text)) !== null) {
-//         matches.push(match[0]);
-//         regex.lastIndex = match.index + 1;
-//     }
-
-//     return matches;
-// }
-
-// const text = "cdbBdbsbz";
-// const result = findMatches(text);
-
-// console.log(result);
+// const myRe = /d(b+)(d)/i;
+// const myArray = myRe.exec("cdbBdbsbz");
+// console.log(myArray);
 // END_TASK_3
 
 // TASK_4
