@@ -24,9 +24,6 @@
 // END_TASK_2
 
 // TASK_3
-// Sample input text
-// Sample input text
-// Sample input text
 // function findMatches(text) {
 //     const regex = /([dD][bB]+[dD]?)/g;
 //     let matches = [];
